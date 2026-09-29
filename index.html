@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOVVIN（モヴィン）｜通じる自信を、最短ルートで。</title>
-  <meta name="description" content="留学・仕事・旅。目標から逆算する英会話スクール MOVVIN。伸び悩みを終わらせ、通じる自信を最短ルートで。">
+  <title>NEUVA（ニューヴァ）｜通じる自信への最短ルート</title>
+  <meta name="description" content="仕事・旅・留学。目標から逆算する英会話スクール MOVVIN。伸び悩みを終わらせ、通じる自信を最短ルートで。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Titan+One&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=M+PLUS+2:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=chillax@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -18,16 +19,16 @@
   <header class="header">
     <div class="header__inner">
       <a href="#top" class="logo">
-        <span class="logo__mark">MOVVIN</span>
-        <span class="logo__sub">英会話スクール</span>
+        <span class="logo__mark">Neuva</span>
+        <span class="logo__sub">英会話スクール【ニューヴァ】</span>
       </a>
       <nav class="nav" id="nav" aria-label="メインメニュー">
         <ul class="nav__list">
           <li><a href="#worries">お悩み</a></li>
+          <li><a href="#mechanism">上達の仕組み</a></li>
           <li><a href="#style">学び方</a></li>
           <li><a href="#points">選ばれる理由</a></li>
           <li><a href="#price">料金</a></li>
-          <li><a href="#flow">体験の流れ</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
@@ -42,17 +43,17 @@
   <main id="top">
     <section class="hero">
       <div class="hero__media" aria-hidden="true">
-        <img src="./images/pexels-girl-1867092.jpg" alt="若い女性" width="1024" height="683" decoding="async"
-          fetchpriority="high">
+        <img src="./images/pexels-girl-1867092-classroom-v7.png" alt="英会話教室で微笑む白人女性" width="1536" height="1024"
+          decoding="async" fetchpriority="high">
       </div>
       <div class="hero__inner">
         <div class="hero__copy">
           <p class="hero__lead">仕事も、旅も、留学も。</p>
           <h1 class="hero__title">
-            <span>通じる自信を、</span><br>
-            <span>最短ルートで。</span>
+            <span>通じる自信<small class="hero__title-small">への</small></span><br>
+            <span>最短ルート</span>
           </h1>
-          <p class="hero__text">目標から逆算して設計する英会話。伸び悩みを終わらせ、通じる実感まで伴走します。</p>
+          <p class="hero__text">目標から逆算して設計する個別の<br>プランにより伸び悩みを終わらせ、<br>通じる実感まで伴走します。</p>
           <div class="hero__badges">
             <div class="badge">
               <p class="badge__label">レッスン満足度</p>
@@ -63,38 +64,40 @@
               <p class="badge__num">100<span>%</span></p>
             </div>
           </div>
-          <a href="#cta" class="btn btn--cta btn--lg">無料体験レッスンはこちら</a>
+          <aside class="price-entry" aria-label="料金の目安">
+            <span class="price-entry__label">始めやすい</span>
+            <p class="price-entry__text">
+              月々<span class="price-entry__yen">11,000</span>円〜で、駅前もオンラインも。
+            </p>
+            <a href="#price" class="price-entry__link">料金を見る</a>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="flow-band" id="flow-preview">
+    <section class="teachers" id="teachers">
       <div class="inner">
-        <h2 class="flow-band__title">無料体験レッスンの流れ<span class="chip">初めての方も安心</span></h2>
-        <ol class="steps">
-          <li class="step">
-            <span class="step__num">1</span>
-            <h3>目標ヒアリング</h3>
-            <p>留学・仕事・旅。あなたのゴールを一緒に言語化します。</p>
+        <h2 class="sec-title sec-title--ink">経験豊富なネイティヴ講師が待っています</h2>
+        <p class="sec-lead">ぜひ体験レッスンで、「通じた」感覚を先に味わってください！</p>
+        <ul class="teachers__list">
+          <li class="teachers__item teachers__item--1">
+            <img src="./images/teacher-1.png" alt="英会話講師のイメージ" width="360" height="480" loading="lazy" decoding="async">
           </li>
-          <li class="step">
-            <span class="step__num">2</span>
-            <h3>レベル診断＋体験</h3>
-            <p>今の「通じる力」を確認し、外国人講師と会話します。</p>
+          <li class="teachers__item teachers__item--2">
+            <img src="./images/teacher-2.png" alt="英会話講師のイメージ" width="360" height="480" loading="lazy" decoding="async">
           </li>
-          <li class="step">
-            <span class="step__num">3</span>
-            <h3>最短ルートの提案</h3>
-            <p>何ヶ月で何ができるようになるか、学習プランをお渡しします。</p>
+          <li class="teachers__item teachers__item--3">
+            <img src="./images/teacher-3.png" alt="英会話講師のイメージ" width="360" height="480" loading="lazy" decoding="async">
           </li>
-        </ol>
+        </ul>
+        <p class="teachers__note">体験当日は、状況ヒアリング → 体験レッスン → あなた専用プラン、の順で進みます。</p>
       </div>
     </section>
 
-    <section class="cta-mid">
-      <p class="cta-mid__catch">体験して分かる、通じる感覚。</p>
+    <section class="cta-mid" aria-labelledby="cta-mid-title">
+      <h2 class="cta-mid__catch" id="cta-mid-title">体験して分かる、通じる感覚。</h2>
       <a href="#cta" class="btn btn--cta btn--lg">
-        <span class="btn__badge">かんたん60秒</span>
+        <span class="btn__badge">かんたん<br>60秒</span>
         無料体験レッスンはこちら
       </a>
     </section>
@@ -104,101 +107,175 @@
         <h2 class="sec-title">こんなお悩み、ありませんか？</h2>
         <ul class="worry-list">
           <li>
-            <span class="worry-list__icon" aria-hidden="true">?</span>
-            <p>勉強はしてきたのに、<strong>自分の英語に自信がもてない</strong></p>
+            <span class="worry-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path class="worry-list__bubble"
+                  d="M16 3.8C8.5 3.8 2.5 8.9 2.5 15.2S8.5 26.6 16 26.6c1.8 0 3.6-.3 5.2-.9l7.3 3.1-2.3-5.6c2.1-2.1 3.3-4.9 3.3-8C29.5 8.9 23.5 3.8 16 3.8Z">
+                </path>
+                <path class="worry-list__scribble"
+                  d="M9.5 16C8 11 13 9 16 12C20 8 24 13 21 16C25 19 20 23 16.5 20C13 24 8 21 11 17C7 15 10 10 14 12C16 8 22 10 20 14C24 16 21 22 17 19C15 23 9 20 12 16C9 13 13 9 17 12C21 10 23 15 20 18C18 22 12 22 11 18C8 17 9 13 13 13C14 10 20 11 21 15C23 18 18 21 15 19C11 21 8 18 9.5 16">
+                </path>
+              </svg>
+            </span>
+            <p>勉強はしてきたのに、<strong>自分の英語に自信がもてない…</strong></p>
           </li>
           <li>
-            <span class="worry-list__icon" aria-hidden="true">?</span>
-            <p>単語も文法も知っているのに、<strong>会話になると伸び悩む</strong></p>
+            <span class="worry-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path class="worry-list__bubble"
+                  d="M16 3.8C8.5 3.8 2.5 8.9 2.5 15.2S8.5 26.6 16 26.6c1.8 0 3.6-.3 5.2-.9l7.3 3.1-2.3-5.6c2.1-2.1 3.3-4.9 3.3-8C29.5 8.9 23.5 3.8 16 3.8Z">
+                </path>
+                <path class="worry-list__scribble"
+                  d="M9.5 16C8 11 13 9 16 12C20 8 24 13 21 16C25 19 20 23 16.5 20C13 24 8 21 11 17C7 15 10 10 14 12C16 8 22 10 20 14C24 16 21 22 17 19C15 23 9 20 12 16C9 13 13 9 17 12C21 10 23 15 20 18C18 22 12 22 11 18C8 17 9 13 13 13C14 10 20 11 21 15C23 18 18 21 15 19C11 21 8 18 9.5 16">
+                </path>
+              </svg>
+            </span>
+            <p>単語も文法も知っているのに、<strong>会話になると頭が真っ白…</strong></p>
           </li>
           <li>
-            <span class="worry-list__icon" aria-hidden="true">?</span>
-            <p>留学・仕事・旅の目標はあるのに、<strong>何から始めるべきか分からない</strong></p>
+            <span class="worry-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path class="worry-list__bubble"
+                  d="M16 3.8C8.5 3.8 2.5 8.9 2.5 15.2S8.5 26.6 16 26.6c1.8 0 3.6-.3 5.2-.9l7.3 3.1-2.3-5.6c2.1-2.1 3.3-4.9 3.3-8C29.5 8.9 23.5 3.8 16 3.8Z">
+                </path>
+                <path class="worry-list__scribble"
+                  d="M9.5 16C8 11 13 9 16 12C20 8 24 13 21 16C25 19 20 23 16.5 20C13 24 8 21 11 17C7 15 10 10 14 12C16 8 22 10 20 14C24 16 21 22 17 19C15 23 9 20 12 16C9 13 13 9 17 12C21 10 23 15 20 18C18 22 12 22 11 18C8 17 9 13 13 13C14 10 20 11 21 15C23 18 18 21 15 19C11 21 8 18 9.5 16">
+                </path>
+              </svg>
+            </span>
+            <p>仕事・留学・旅の目標はあるのに、<strong>どう学ぶべきか分からない…</strong></p>
+          </li>
+          <li>
+            <span class="worry-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <path class="worry-list__bubble"
+                  d="M16 3.8C8.5 3.8 2.5 8.9 2.5 15.2S8.5 26.6 16 26.6c1.8 0 3.6-.3 5.2-.9l7.3 3.1-2.3-5.6c2.1-2.1 3.3-4.9 3.3-8C29.5 8.9 23.5 3.8 16 3.8Z">
+                </path>
+                <path class="worry-list__scribble"
+                  d="M9.5 16C8 11 13 9 16 12C20 8 24 13 21 16C25 19 20 23 16.5 20C13 24 8 21 11 17C7 15 10 10 14 12C16 8 22 10 20 14C24 16 21 22 17 19C15 23 9 20 12 16C9 13 13 9 17 12C21 10 23 15 20 18C18 22 12 22 11 18C8 17 9 13 13 13C14 10 20 11 21 15C23 18 18 21 15 19C11 21 8 18 9.5 16">
+                </path>
+              </svg>
+            </span>
+            <p>仕事や学校が忙しく、<strong>学習がいつも途中で止まってしまう…</strong></p>
           </li>
         </ul>
-        <p class="worries__answer">MOVVINは、その悩みを「最短ルート」でほどきます。</p>
+        <p class="worries__answer">NEUVAは、その悩みを「最短ルート」でほどきます！</p>
+      </div>
+    </section>
+
+    <section class="mechanism" id="mechanism" aria-labelledby="mechanism-title">
+      <div class="inner">
+        <h2 class="sec-title sec-title--ink" id="mechanism-title">通じる力までの、3ステップ</h2>
+        <p class="sec-lead">「話して慣れる」土台に、ゴール逆算の仕組みを掛け合わせます！</p>
+        <ol class="mechanism-list">
+          <li class="mechanism-item">
+            <span class="mechanism-item__num">1</span>
+            <h3>診断</h3>
+            <p>今の「通じる／通じない」の境界を、会話の中で確認します。</p>
+            <div class="mechanism-item__illust-frame">
+              <img class="mechanism-item__illust" src="./images/mech-diagnose.png" alt="" width="400" height="300"
+                loading="lazy" decoding="async">
+            </div>
+          </li>
+          <li class="mechanism-item">
+            <span class="mechanism-item__num">2</span>
+            <h3>個別プラン</h3>
+            <p>目標と週の時間から、あなたのためだけの学習プランを組み立てます。</p>
+            <div class="mechanism-item__illust-frame">
+              <img class="mechanism-item__illust" src="./images/mech-plan.png" alt="" width="400" height="300"
+                loading="lazy" decoding="async">
+            </div>
+          </li>
+          <li class="mechanism-item">
+            <span class="mechanism-item__num">3</span>
+            <h3>通じるチェック</h3>
+            <p>定期的にAIで成長を数値化。伸び悩みを感覚で終わらせません。</p>
+            <div class="mechanism-item__illust-frame">
+              <img class="mechanism-item__illust" src="./images/mech-check.png" alt="" width="400" height="300"
+                loading="lazy" decoding="async">
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
     <section class="style" id="style">
       <div class="inner">
-        <h2 class="sec-title sec-title--ink">ライフスタイルに合わせて、効率よく。</h2>
-        <p class="sec-lead">通学もオンラインも、ひとつのゴール設計の中で組み合わせられます。</p>
+        <h2 class="sec-title sec-title--ink">個別プランの中で、4つを組み合わせる</h2>
+        <p class="sec-lead">通学・オンライン・ライブ・アプリ。あなたのゴールと週の時間に合わせて、必要なものを選んで自由に組み立てられます。</p>
         <div class="style-grid">
           <article class="style-card">
             <p class="style-card__label">通学</p>
             <h3>駅近キャンパス</h3>
-            <p>対面で話す量を確保。通じる実感をいちばん早く積めます。</p>
+            <p>担当講師と対面で話す量を確保。通じる実感をいちばん早く積めます。</p>
+            <img class="style-card__photo" src="./images/style-campus.png" alt="" width="640" height="360"
+              loading="lazy" decoding="async">
           </article>
           <article class="style-card">
             <p class="style-card__label">オンライン</p>
-            <h3>自宅でも同じ品質</h3>
-            <p>忙しい週はオンライン。移動時間をレッスンに回します。</p>
+            <h3>ネイティヴ講師の教材動画</h3>
+            <p>好きな場所と時間で学ぶ。業界屈指のコンテンツ量。</p>
+            <img class="style-card__photo" src="./images/style-online-v2.png" alt="" width="1672" height="941"
+              loading="lazy" decoding="async">
           </article>
           <article class="style-card">
-            <p class="style-card__label">ライブ</p>
-            <h3>英語のシャワー</h3>
-            <p>定額で聞き取り量を増やし、耳を実戦仕様にします。</p>
+            <p class="style-card__label">ライブ授業</p>
+            <h3>本番を想定した授業</h3>
+            <p>通学と同じように、講師とビデオ通話で会話レッスン。</p>
+            <img class="style-card__photo" src="./images/style-live.png" alt="" width="640" height="360" loading="lazy"
+              decoding="async">
           </article>
           <article class="style-card">
             <p class="style-card__label">アプリ</p>
             <h3>すきま復習</h3>
-            <p>レッスンのフレーズを定着。伸び悩みの原因を潰します。</p>
+            <p>レッスンのフレーズを定着。クセになる人続出の専用アプリ。</p>
+            <img class="style-card__photo" src="./images/style-app-v2.png" alt="" width="1672" height="941"
+              loading="lazy" decoding="async">
           </article>
         </div>
+        <p class="style__note">どの組み合わせにするかは、体験時の<strong>個別学習プラン</strong>で一緒に決めます。</p>
       </div>
     </section>
 
     <section class="points" id="points">
       <div class="inner">
-        <h2 class="sec-title sec-title--ink">MOVVINが選ばれる<span class="num">3</span>つのポイント</h2>
+        <h2 class="sec-title sec-title--ink">NEUVAが選ばれる<span class="num">3</span>つの理由</h2>
 
         <article class="point-card">
           <p class="point-tag">POINT 1</p>
-          <h3>目標から逆算する、ゴール設計</h3>
+          <h3>一人ひとりに合わせた、学習プラン設計</h3>
           <div class="point-card__body">
-            <div class="point-card__illust" aria-hidden="true">
-              <svg viewBox="0 0 200 140">
-                <rect width="200" height="140" rx="12" fill="#E8F6FB" />
-                <path d="M30 100 L80 70 L120 82 L170 40" fill="none" stroke="#00A3E0" stroke-width="6"
-                  stroke-linecap="round" />
-                <circle cx="170" cy="40" r="10" fill="#3E2723" />
-              </svg>
+            <div class="point-card__illust">
+              <img src="./images/point1-plan.png" alt="目標から逆算した個別学習プランのイメージ" width="400" height="300" loading="lazy"
+                decoding="async">
             </div>
-            <p>「なんとなく英会話」ではなく、留学・外資・一人旅など<strong>ゴールから必要な力だけ</strong>を並べます。無駄な遠回りを減らすのが、MOVVINの最短ルートです。</p>
+            <p>
+              みんな同じカリキュラムではありません。仕事・旅・留学など、あなたのゴールと週の時間から<strong>学習プランを個別にカスタマイズ</strong>します。通学・オンライン・ライブ・アプリ、必要な組み合わせだけを組み立てる、NEUVAの最短ルート。
+            </p>
           </div>
         </article>
 
         <article class="point-card">
           <p class="point-tag">POINT 2</p>
-          <h3>「通じる自信」を、見える化する</h3>
+          <h3>ネイティヴ講師と話し、「通じる自信」を見える化</h3>
           <div class="point-card__body">
-            <div class="point-card__illust" aria-hidden="true">
-              <svg viewBox="0 0 200 140">
-                <rect width="200" height="140" rx="12" fill="#F3EBE3" />
-                <rect x="36" y="70" width="28" height="40" rx="4" fill="#7EC8E3" />
-                <rect x="76" y="50" width="28" height="60" rx="4" fill="#00A3E0" />
-                <rect x="116" y="30" width="28" height="80" rx="4" fill="#3E2723" />
-              </svg>
+            <div class="point-card__illust">
+              <img src="./images/point2-speak.png" alt="外国人講師との会話と成長の見える化のイメージ" width="400" height="300" loading="lazy"
+                decoding="async">
             </div>
-            <p>体験時のレベル診断と、定期チェックで成長を数字にします。<strong>通じた瞬間</strong>を積み重ねる設計なので、「伸び悩み」を感覚で終わらせません。</p>
+            <p><strong>ネイティヴ講師</strong>とのレッスンで「通じた瞬間」を積み重ねます。体験時のレベル診断とAI定期チェックで成長を数値化するので、「伸び悩み」を感覚で終わらせません。</p>
           </div>
         </article>
 
         <article class="point-card">
           <p class="point-tag">POINT 3</p>
-          <h3>効率重視でも、月謝は手頃に</h3>
+          <h3>効率重視でも、月謝はお手頃</h3>
           <div class="point-card__body">
-            <div class="point-card__illust" aria-hidden="true">
-              <svg viewBox="0 0 200 140">
-                <rect width="200" height="140" rx="12" fill="#F3EBE3" />
-                <circle cx="70" cy="72" r="36" fill="#00A3E0" />
-                <circle cx="130" cy="72" r="36" fill="#3E2723" />
-                <text x="70" y="78" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">通</text>
-                <text x="130" y="78" text-anchor="middle" fill="#fff" font-size="18" font-weight="700">オ</text>
-              </svg>
+            <div class="point-card__illust">
+              <img src="./images/point3-flex.png" alt="通学とオンラインを組み合わせた手頃な月謝のイメージ" width="400" height="300"
+                loading="lazy" decoding="async">
             </div>
-            <p>GABA型の高単価だけが効率ではありません。通学とオンラインを組み合わせ、<strong>必要な分だけ月謝で</strong>続けられます。</p>
+            <p>高いスクールと比べても遜色のないレッスン内容です。通学とオンラインを組み合わせ、<strong>必要な分だけ月謝で</strong>続けられます。</p>
           </div>
         </article>
       </div>
@@ -208,8 +285,8 @@
       <div class="inner">
         <h2 class="sec-title sec-title--ink">レッスンスタイル・授業料</h2>
         <p class="sec-lead">まずは2つの入り口から。体験時に最短ルートへ組み替えます。</p>
-        <div class="price-grid">
-          <article class="price-card">
+        <div class="price-grid" role="radiogroup" aria-label="料金プランを選択">
+          <article class="price-card" role="radio" aria-checked="false" tabindex="-1" data-plan="ライトプラン">
             <p class="price-card__rec">気軽に始めたい方におすすめ</p>
             <h3>ライトプラン</h3>
             <p class="price-card__desc">習慣化と基礎の「通じる」を作るグループレッスン。</p>
@@ -231,11 +308,12 @@
             </dl>
             <p class="price-card__yen"><span>11,000</span>円／月（税込）</p>
             <p class="price-card__note">入会金・教材費は体験時にご案内</p>
+            <span class="price-card__select" aria-hidden="true">このプランを選ぶ</span>
           </article>
-          <article class="price-card price-card--accent">
+          <article class="price-card is-selected" role="radio" aria-checked="true" tabindex="0" data-plan="ゴールプラン">
             <p class="price-card__rec price-card__rec--hot">本気で通じたい方におすすめ</p>
             <h3>ゴールプラン</h3>
-            <p class="price-card__desc">少人数〜マンツーマンで、目標から逆算した実践会話。</p>
+            <p class="price-card__desc">少人数〜マンツーマンで、目標から逆算した実践式会話。</p>
             <ul class="tags">
               <li>中級〜</li>
               <li>実践</li>
@@ -254,8 +332,10 @@
             </dl>
             <p class="price-card__yen"><span>24,200</span>円／月（税込）〜</p>
             <p class="price-card__note">オンライン併用でコマ数を最適化できます</p>
+            <span class="price-card__select" aria-hidden="true">選択中</span>
           </article>
         </div>
+        <p class="price-plan-status" aria-live="polite">選択中のプラン：<strong>ゴールプラン</strong></p>
         <ul class="check-box">
           <li>毎週同じ曜日・時間で続けやすい</li>
           <li>急な予定は振替可（プランによる）</li>
@@ -268,57 +348,29 @@
         <h2 class="sec-title sec-title--ink">こんな目標の方が学んでいます</h2>
         <div class="voice-grid">
           <article class="voice-card">
-            <img class="voice-card__photo" src="./images/voice-ks.png" alt="" width="400" height="400" loading="lazy" decoding="async">
-            <p class="voice-card__who">会社員・30代</p>
+            <img class="voice-card__photo" src="./images/voice-ks.png" alt="会社員・男性30代の受講者イメージ" width="720" height="240"
+              loading="lazy" decoding="async">
+            <p class="voice-card__who">30代・K.S様</p>
             <h3>海外拠点との会議で、自分の意見を言えるように</h3>
             <p>「通じないかも」が先に立っていたのが、ゴール設計のあと会話の型が決まりました。3ヶ月で会議の最後に一言足せるようになりました。</p>
-            <p class="voice-card__name">K.S 様</p>
           </article>
+
           <article class="voice-card">
-            <img class="voice-card__photo" src="./images/voice-am.png" alt="" width="400" height="400" loading="lazy" decoding="async">
-            <p class="voice-card__who">留学準備・20代</p>
+            <img class="voice-card__photo" src="./images/voice-am.png" alt="語学留学を目指す女性20代の受講者イメージ" width="720"
+              height="240" loading="lazy" decoding="async">
+            <p class="voice-card__who">20代・A.M様</p>
             <h3>語学学校に行く前に、授業についていける耳を</h3>
             <p>単語暗記ばかりで伸び悩んでいました。ライブと通学を組み合わせ、聞き取り→即返答の回路ができたのが大きいです。</p>
-            <p class="voice-card__name">A.M 様</p>
           </article>
+
           <article class="voice-card">
-            <img class="voice-card__photo" src="./images/voice-yt.png" alt="" width="400" height="400" loading="lazy" decoding="async">
-            <p class="voice-card__who">旅行・40代</p>
+            <img class="voice-card__photo" src="./images/voice-yt.png" alt="海外1人旅を目指す女性40代の受講者イメージ" width="720"
+              height="240" loading="lazy" decoding="async">
+            <p class="voice-card__who">40代・Y.T様</p>
             <h3>ツアーじゃない旅で、現地の人と話したい</h3>
             <p>自信がなくて店員さんに聞けませんでした。短いフレーズを実戦で使ううちに、自分から声をかけられるようになりました。</p>
-            <p class="voice-card__name">Y.T 様</p>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section class="flow" id="flow">
-      <div class="inner">
-        <h2 class="sec-title">無料体験で、現在地と未来が見えます</h2>
-        <p class="sec-lead">1回の体験で「今の力」「伸びしろ」「話せる未来」まで具体化します。</p>
-        <ol class="flow-list">
-          <li>
-            <span>01</span>
-            <div>
-              <h3>カウンセリング</h3>
-              <p>目標・期限・週に使える時間を整理します。</p>
-            </div>
-          </li>
-          <li>
-            <span>02</span>
-            <div>
-              <h3>レベル診断＋体験レッスン</h3>
-              <p>通じる／通じないの境界を、会話の中で確認します。</p>
-            </div>
-          </li>
-          <li>
-            <span>03</span>
-            <div>
-              <h3>最短ルートのプラン提示</h3>
-              <p>通学・オンラインの組み合わせと、目安期間をお渡しします。</p>
-            </div>
-          </li>
-        </ol>
       </div>
     </section>
 
@@ -327,24 +379,28 @@
         <h2 class="sec-title sec-title--ink">よくある質問</h2>
         <div class="faq-list">
           <details open>
-            <summary><span class="q">Q</span>英語に自信がなくても大丈夫ですか？</summary>
+            <summary tabindex="0"><span class="q">Q</span>英語に自信がなくても大丈夫ですか？</summary>
             <p>はい。MOVVINの体験は「できない確認」ではなく、通じるための現在地確認です。初心者の方も、伸び悩み層の方も同じ流れで始められます。</p>
           </details>
           <details>
-            <summary><span class="q">Q</span>効率よく上達できますか？</summary>
+            <summary tabindex="0"><span class="q">Q</span>効率よく上達できますか？</summary>
             <p>目標から逆算して、必要な会話だけに絞ります。全部を均等にやるより、ゴールに効く順番で進めるのが最短ルートです。</p>
           </details>
           <details>
-            <summary><span class="q">Q</span>月謝はどのくらいですか？</summary>
+            <summary tabindex="0"><span class="q">Q</span>みんな同じカリキュラムですか？</summary>
+            <p>いいえ。体験時のヒアリングとレベル診断をもとに、学習プランを一人ひとりカスタマイズします。教材も進度も、あなたのゴールに合わせて組み替えます。</p>
+          </details>
+          <details>
+            <summary tabindex="0"><span class="q">Q</span>月謝はどのくらいですか？</summary>
             <p>ライトプランは税込11,000円／月から。ゴールプランは税込24,200円／月から。オンライン併用でコマの使い方を最適化できます。</p>
           </details>
           <details>
-            <summary><span class="q">Q</span>通学とオンラインは併用できますか？</summary>
-            <p>できます。忙しい週はオンライン、通じる量を増やしたい週は通学、という使い方ができます。</p>
+            <summary tabindex="0"><span class="q">Q</span>通学とオンラインは併用できますか？</summary>
+            <p>できます。忙しい週はオンライン、通じる量を増やしたい週は通学、という使い方もできます。</p>
           </details>
           <details>
-            <summary><span class="q">Q</span>留学や仕事の準備にも対応していますか？</summary>
-            <p>語学学校・進学、英語を使う仕事、外資、海外ビジネス、一人旅まで、ゴール別に設計します。</p>
+            <summary tabindex="0"><span class="q">Q</span>留学や仕事の準備にも対応していますか？</summary>
+            <p>はい。語学学校・進学、英語を使う仕事、外資、海外ビジネス、一人旅まで、ゴール別に設計します。</p>
           </details>
         </div>
       </div>
@@ -353,34 +409,95 @@
     <section class="cta" id="cta">
       <div class="inner">
         <p class="cta__catch">まずは、無料体験から。</p>
-        <h2>通じる自信を、最短ルートで。</h2>
+        <h2>通じる自信への最短ルート</h2>
         <form class="form" action="#" method="get">
-          <label>お名前<input type="text" name="name" placeholder="山田 太郎" required></label>
-          <label>メールアドレス<input type="email" name="email" placeholder="you@example.com" required></label>
-          <label>ご希望の目標
-            <select name="goal">
+          <input type="hidden" name="plan" value="ゴールプラン">
+          <label><span class="form__label-text">お名前<span class="form__required" aria-hidden="true">*</span></span><input
+              type="text" name="name" autocomplete="name" placeholder="山田 太郎" required></label>
+          <label><span class="form__label-text">フリガナ<span class="form__required"
+                aria-hidden="true">*</span></span><input type="text" name="name_kana" placeholder="ヤマダ タロウ"
+              required></label>
+          <label><span class="form__label-text">メールアドレス<span class="form__required"
+                aria-hidden="true">*</span></span><input type="email" name="email" autocomplete="email"
+              placeholder="you@example.com" required></label>
+          <label><span class="form__label-text">ご希望の目標<span class="form__required" aria-hidden="true">*</span></span>
+            <select name="goal" required>
+              <option value="" selected disabled>選択してください</option>
               <option>英語を使う仕事・外資就職</option>
               <option>海外ビジネス・海外移住</option>
               <option>ツアーじゃない旅行・外国人と交流</option>
-              <option>留学（語学学校・大学・大学院）</option>
+              <option>留学（語学学校・大学・大学院 etc.）</option>
               <option>その他</option>
+            </select>
+          </label>
+          <label><span class="form__label-text">ご希望の日付<span class="form__required" aria-hidden="true">*</span></span>
+            <input type="date" name="preferred_date" required>
+          </label>
+          <label><span class="form__label-text">ご希望の時間<span class="form__required" aria-hidden="true">*</span></span>
+            <select name="preferred_time" required>
+              <option value="" selected disabled>選択してください</option>
+              <option value="09:00">09:00</option>
+              <option value="09:30">09:30</option>
+              <option value="10:00">10:00</option>
+              <option value="10:30">10:30</option>
+              <option value="11:00">11:00</option>
+              <option value="11:30">11:30</option>
+              <option value="12:00">12:00</option>
+              <option value="12:30">12:30</option>
+              <option value="13:00">13:00</option>
+              <option value="13:30">13:30</option>
+              <option value="14:00">14:00</option>
+              <option value="14:30">14:30</option>
+              <option value="15:00">15:00</option>
+              <option value="15:30">15:30</option>
+              <option value="16:00">16:00</option>
+              <option value="16:30">16:30</option>
+              <option value="17:00">17:00</option>
+              <option value="17:30">17:30</option>
+              <option value="18:00">18:00</option>
+              <option value="18:30">18:30</option>
+              <option value="19:00">19:00</option>
+              <option value="19:30">19:30</option>
+              <option value="20:00">20:00</option>
+              <option value="20:30">20:30</option>
+              <option value="21:00">21:00</option>
             </select>
           </label>
           <button type="submit" class="btn btn--cta btn--lg">無料体験を予約する</button>
         </form>
-        <p class="cta__tel">お電話：0120-000-000（架空） 受付 10:00–20:00</p>
+        <div class="phone-reservation">
+          <p class="phone-reservation__lead">お電話での予約はこちら</p>
+          <div class="phone-reservation__info">
+            <span class="phone-reservation__tag" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" focusable="false">
+                <path
+                  d="M6.6 2.8 9.4 7a1.5 1.5 0 0 1-.2 1.8l-1.5 1.5a15.8 15.8 0 0 0 6 6l1.5-1.5a1.5 1.5 0 0 1 1.8-.2l4.2 2.8a1.5 1.5 0 0 1 .6 1.7l-.6 2.3a1.5 1.5 0 0 1-1.5 1.1C9.7 22.5 1.5 14.3 1.5 4.3a1.5 1.5 0 0 1 1.1-1.5l2.3-.6a1.5 1.5 0 0 1 1.7.6Z" />
+              </svg>
+            </span>
+            <a class="phone-reservation__number" href="tel:0120000000"
+              aria-label="電話で無料体験を予約する 0120-000-000">0120-000-000</a>
+            <span class="phone-reservation__hours">受付 10:00–20:00（架空）</span>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
+  <a class="page-top" href="#top" aria-label="ページ上部へ戻る">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="m6.5 14.5 5.5-5 5.5 5" />
+    </svg>
+    <span>TOP</span>
+  </a>
+
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__logo">MOVVIN</p>
+      <p class="footer__logo">Neuva</p>
       <ul>
         <li><a href="#">会社概要</a></li>
         <li><a href="#">プライバシーポリシー</a></li>
       </ul>
-      <p class="copy">このサイトはポートフォリオ用の架空スクールです。実在の団体とは関係ありません。<br>COPYRIGHT © MOVVIN (Fictional) ALL RIGHTS RESERVED.</p>
+      <p class="copy">このサイトはポートフォリオ用の架空スクールです。実在の団体とは関係ありません。<br>COPYRIGHT ©NEUVA (Fictional) ALL RIGHTS RESERVED.</p>
     </div>
   </footer>
 
