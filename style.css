@@ -6,9 +6,9 @@
   /* Hierarchy: gray (body) → blue-gray (emphasis) → coral (strong) */
   --charcoal: #4b4b4b;
   --gray-mid: #8b8b8b;
-  --gray-light: #cecece;
-  --cyan: #1589e2;
-  --deep-teal: #476d91fa;
+  --gray-light: #d5d5d5;
+  --cyan: #1887ee;
+  --deep-teal: #476791fa;
   --coral: #f66d48;
   --dusty-rose: #a36b60;
   --butter: #fcd556;
@@ -345,7 +345,7 @@ summary:focus-visible {
   background: rgba(255, 255, 255, 0.88);
   color: var(--charcoal);
   padding: 0.08em 0.18em;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0 2px 12px rgba(51, 51, 51, 0.08);
 }
 
@@ -639,7 +639,7 @@ summary:focus-visible {
   display: grid;
   gap: 0.85rem;
   max-width: 720px;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 48px;
 }
 
 .worry-list li {
@@ -695,10 +695,15 @@ summary:focus-visible {
 }
 
 .worries__answer {
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.18em 0.55em;
+  background: var(--butter);
+  border-radius: 0;
   text-align: center;
   font-weight: 700;
   color: var(--charcoal);
-  font-size: 1.05rem;
+  font-size: clamp(1.425rem, calc(1.336rem + 0.446vw), 1.55rem);
 }
 
 /* ---------- Mechanism (growth steps) ---------- */
@@ -993,9 +998,9 @@ summary:focus-visible {
 }
 
 .price-card.is-selected {
-  border-color: var(--cyan);
-  box-shadow: 0 14px 32px rgba(6, 124, 234, 0.18);
-  background: var(--cyan-soft);
+  border-color: var(--butter);
+  box-shadow: 0 14px 32px rgba(252, 213, 86, 0.28);
+  background: rgba(252, 213, 86, 0.16);
   transform: translateY(-3px);
 }
 
@@ -1012,8 +1017,8 @@ summary:focus-visible {
   }
 
   .price-card.is-selected:hover {
-    border-color: var(--cyan);
-    box-shadow: 0 16px 34px rgba(6, 124, 234, 0.2);
+    border-color: var(--butter);
+    box-shadow: 0 16px 34px rgba(252, 213, 86, 0.34);
   }
 }
 
@@ -1128,8 +1133,8 @@ summary:focus-visible {
 }
 
 .price-card.is-selected .price-card__select {
-  color: var(--cyan);
-  border-color: var(--cyan);
+  color: var(--charcoal);
+  border-color: var(--butter);
 }
 
 .price-card.is-selected .price-card__select::before {
@@ -1142,16 +1147,16 @@ summary:focus-visible {
   width: fit-content;
   margin: -0.25rem auto calc(1.25rem + 8px);
   padding: 0.45rem 0.85rem;
-  border: 1px solid rgba(6, 124, 234, 0.3);
+  border: 1px solid var(--butter);
   border-radius: 999px;
-  background: var(--cyan-soft);
+  background: rgba(252, 213, 86, 0.16);
   text-align: center;
   font-size: 0.792rem;
   color: var(--charcoal);
 }
 
 .price-plan-status strong {
-  color: var(--cyan);
+  color: var(--charcoal);
 }
 
 .check-box {
@@ -1770,6 +1775,10 @@ summary:focus-visible {
 @media (max-width: 768px) {
   :root {
     --header-h: 64px;
+  }
+
+  .worries__answer {
+    line-height: calc(1.75em - 6px);
   }
 
   .hero__lead,
