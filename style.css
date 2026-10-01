@@ -184,7 +184,7 @@ p {
   font-family: var(--font-logo);
   font-size: clamp(1.99rem, calc(1.69rem + 0.63vw), 2.16rem);
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--cyan);
   text-transform: none;
   transition: letter-spacing 0.25s ease, color 0.25s ease, transform 0.25s ease;
@@ -1588,7 +1588,7 @@ summary:focus-visible {
   font-family: var(--font-logo);
   font-size: 1.7rem;
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   margin-bottom: 1rem;
   color: var(--white);
 }
