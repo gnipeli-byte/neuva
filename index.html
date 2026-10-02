@@ -43,8 +43,13 @@
   <main id="top">
     <section class="hero">
       <div class="hero__media" aria-hidden="true">
-        <img src="./images/pexels-girl-1867092-classroom-v7.png" alt="英会話教室で微笑む白人女性" width="1536" height="1024"
-          decoding="async" fetchpriority="high">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./images/pexels-girl-1867092-classroom-v7-sp.webp"
+            type="image/webp">
+          <source srcset="./images/pexels-girl-1867092-classroom-v7-pc.webp" type="image/webp">
+          <img src="./images/pexels-girl-1867092-classroom-v7-pc.jpg" alt="英会話教室で微笑む白人女性" width="1920"
+            height="1280" loading="eager" decoding="async" fetchpriority="high">
+        </picture>
       </div>
       <div class="hero__inner">
         <div class="hero__copy">
@@ -81,13 +86,22 @@
         <p class="sec-lead">ぜひ体験レッスンで、「通じた」感覚を先に味わってください！</p>
         <ul class="teachers__list">
           <li class="teachers__item teachers__item--1">
-            <img src="./images/teacher-1.png" alt="英会話講師のイメージ" width="360" height="480" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="./images/teacher-1-cutout.webp" type="image/webp">
+              <img src="./images/teacher-1-cutout.png" alt="英会話講師のイメージ" width="800" height="1067" loading="lazy" decoding="async">
+            </picture>
           </li>
           <li class="teachers__item teachers__item--2">
-            <img src="./images/teacher-2.png" alt="英会話講師のイメージ" width="360" height="480" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="./images/teacher-2-cutout.webp" type="image/webp">
+              <img src="./images/teacher-2-cutout.png" alt="英会話講師のイメージ" width="800" height="1067" loading="lazy" decoding="async">
+            </picture>
           </li>
           <li class="teachers__item teachers__item--3">
-            <img src="./images/teacher-3.png" alt="英会話講師のイメージ" width="360" height="480" loading="lazy" decoding="async">
+            <picture>
+              <source srcset="./images/teacher-3-cutout.webp" type="image/webp">
+              <img src="./images/teacher-3-cutout.png" alt="英会話講師のイメージ" width="800" height="1067" loading="lazy" decoding="async">
+            </picture>
           </li>
         </ul>
         <p class="teachers__note">体験当日は、状況ヒアリング → 体験レッスン → あなた専用プラン、の順で進みます。</p>
@@ -348,24 +362,33 @@
         <h2 class="sec-title sec-title--ink">こんな目標の方が学んでいます</h2>
         <div class="voice-grid">
           <article class="voice-card">
-            <img class="voice-card__photo" src="./images/voice-ks.png" alt="会社員・男性30代の受講者イメージ" width="720" height="240"
-              loading="lazy" decoding="async">
+            <picture class="voice-card__picture">
+              <source srcset="./images/voice-ks.webp" type="image/webp">
+              <img class="voice-card__photo" src="./images/voice-ks.jpg" alt="会社員・男性30代の受講者イメージ" width="800"
+                height="450" loading="lazy" decoding="async">
+            </picture>
             <p class="voice-card__who">30代・K.S様</p>
             <h3>海外拠点との会議で、自分の意見を言えるように</h3>
             <p>「通じないかも」が先に立っていたのが、ゴール設計のあと会話の型が決まりました。3ヶ月で会議の最後に一言足せるようになりました。</p>
           </article>
 
           <article class="voice-card">
-            <img class="voice-card__photo" src="./images/voice-am.png" alt="語学留学を目指す女性20代の受講者イメージ" width="720"
-              height="240" loading="lazy" decoding="async">
+            <picture class="voice-card__picture">
+              <source srcset="./images/voice-am.webp" type="image/webp">
+              <img class="voice-card__photo" src="./images/voice-am.jpg" alt="語学留学を目指す女性20代の受講者イメージ" width="800"
+                height="450" loading="lazy" decoding="async">
+            </picture>
             <p class="voice-card__who">20代・A.M様</p>
             <h3>語学学校に行く前に、授業についていける耳を</h3>
             <p>単語暗記ばかりで伸び悩んでいました。ライブと通学を組み合わせ、聞き取り→即返答の回路ができたのが大きいです。</p>
           </article>
 
           <article class="voice-card">
-            <img class="voice-card__photo" src="./images/voice-yt.png" alt="海外1人旅を目指す女性40代の受講者イメージ" width="720"
-              height="240" loading="lazy" decoding="async">
+            <picture class="voice-card__picture">
+              <source srcset="./images/voice-yt.webp" type="image/webp">
+              <img class="voice-card__photo" src="./images/voice-yt.jpg" alt="海外1人旅を目指す女性40代の受講者イメージ" width="800"
+                height="450" loading="lazy" decoding="async">
+            </picture>
             <p class="voice-card__who">40代・Y.T様</p>
             <h3>ツアーじゃない旅で、現地の人と話したい</h3>
             <p>自信がなくて店員さんに聞けませんでした。短いフレーズを実戦で使ううちに、自分から声をかけられるようになりました。</p>
