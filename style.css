@@ -14,7 +14,7 @@
   --butter: #fcd556;
   --cyan-soft: rgba(6, 124, 234, 0.08);
   --rose-soft: rgba(163, 107, 96, 0.09);
-  --footer-color: #8b8b8b;
+  --footer-color: #b0c3ca;
   --bg: #ffffff;
   --white: #ffffff;
   --foam: #ffffff;
@@ -1605,7 +1605,7 @@ summary:focus-visible {
   font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
   color: var(--white);
 }
 
@@ -1613,7 +1613,7 @@ summary:focus-visible {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: calc(1.25rem + 6px);
   font-size: 0.85rem;
   color: var(--charcoal);
 }
