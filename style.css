@@ -7,11 +7,11 @@
   --charcoal: #454545;
   --gray-mid: #8b8b8b;
   --gray-light: #d5d5d5;
-  --cyan: #1887ee;
-  --deep-teal: #476791fa;
+  --cyan: #007fc9;
+  --deep-teal: #255370fa;
   --coral: #f66d48;
   --dusty-rose: #a36b60;
-  --butter: #fcd556;
+  --butter: #ffd04e;
   --cyan-soft: rgba(6, 124, 234, 0.08);
   --rose-soft: rgba(163, 107, 96, 0.09);
   --footer-color: #b0c3ca;
@@ -411,20 +411,6 @@ summary:focus-visible {
   text-shadow: 0 1px 4px rgba(51, 51, 51, 0.8);
 }
 
-.price-entry__label {
-  display: block;
-  width: fit-content;
-  margin: 0 auto 0.2rem;
-  padding: 0.12rem 0.45rem;
-  border-radius: 4px;
-  background: var(--rose-soft);
-  color: var(--charcoal);
-  border: 1px solid var(--dusty-rose);
-  font-size: 0.62rem;
-  font-weight: 700;
-  vertical-align: middle;
-}
-
 .price-entry__yen {
   font-family: var(--font-display);
   font-size: 1.3rem;
@@ -439,7 +425,7 @@ summary:focus-visible {
   margin-top: 0.15rem;
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--cyan);
+  color: var(--white);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-shadow: 0 1px 4px rgba(51, 51, 51, 0.8);
@@ -492,6 +478,10 @@ summary:focus-visible {
   padding: clamp(87px, calc(8vw + 15px), 119px) 0 clamp(53px, calc(7vw - 11px), 77px);
   background: var(--white);
   border-bottom: 1px solid var(--line);
+}
+
+.teachers .sec-title {
+  color: var(--coral);
 }
 
 .teachers__list {
@@ -592,6 +582,12 @@ summary:focus-visible {
   color: var(--charcoal);
 }
 
+.sec-title__marker {
+  background: linear-gradient(transparent 68%, var(--butter) 68%, var(--butter) 94%, transparent 94%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 .sec-title .num {
   font-family: var(--font-display);
   font-size: 1.45em;
@@ -655,14 +651,14 @@ summary:focus-visible {
 
 .worry-list li {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: calc(0.85rem + 6px);
   background: transparent;
   border-radius: 0;
   padding: 0.85rem 0;
   box-shadow: none;
   border: 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--charcoal);
 }
 
 .worry-list li:last-child {
@@ -673,18 +669,15 @@ summary:focus-visible {
   flex-shrink: 0;
   width: 42px;
   height: 42px;
-  border-radius: 50%;
-  background: var(--charcoal);
-  color: #fff;
+  color: var(--charcoal);
   display: grid;
   place-content: center;
-  margin-top: -0.15rem;
   border: 0;
 }
 
 .worry-list__icon svg {
-  width: 30px;
-  height: 30px;
+  width: 42px;
+  height: 42px;
   fill: none;
   stroke: currentColor;
   stroke-width: 2.2;
@@ -693,7 +686,7 @@ summary:focus-visible {
 }
 
 .worry-list__icon .worry-list__scribble {
-  stroke-width: 1.25;
+  stroke-width: 2.8;
 }
 
 .worry-list p {
@@ -1284,22 +1277,29 @@ summary:focus-visible {
 
 .voice-card__picture {
   display: block;
+  width: 7rem;
+  aspect-ratio: 1;
+  margin-inline: auto;
   margin-bottom: 0.85rem;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--cyan-soft);
 }
 
 .voice-card__photo {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 1;
-  max-height: 7.5rem;
+  height: 100%;
   object-fit: cover;
-  object-position: center 40%;
-  border-radius: calc(var(--radius-sm) - 2px);
-  background: var(--cyan-soft);
+  object-position: center;
 }
 
 .voice-card:first-child .voice-card__photo {
-  object-position: center top;
+  object-position: 28% center;
+}
+
+.voice-card:last-child .voice-card__photo {
+  object-position: 17% center;
 }
 
 .voice-card__who {
@@ -1567,7 +1567,6 @@ summary:focus-visible {
 
 .teachers::after,
 .cta-mid::after,
-.worries::after,
 .mechanism::after,
 .style::after,
 .points::after,
@@ -1794,6 +1793,10 @@ summary:focus-visible {
     border-right: 0;
     padding: 0 0 1.25rem;
     border-bottom: 1px solid var(--line);
+  }
+
+  .voice-card+.voice-card {
+    padding-top: 14px;
   }
 
   .voice-card:last-child {
