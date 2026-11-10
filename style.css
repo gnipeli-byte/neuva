@@ -376,7 +376,7 @@ summary:focus-visible {
 }
 
 .hero__text {
-  font-size: 0.74rem;
+  font-size: clamp(0.74rem, calc(0.64rem + 0.426667vw), 0.96rem);
   opacity: 0.95;
   max-width: 30em;
   margin-bottom: 1.5rem;
