@@ -3,12 +3,69 @@
   const nav = document.getElementById("nav");
   const navLinks = [...document.querySelectorAll(".nav__list a[href^='#']")];
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.forEach((item) => item.removeAttribute("aria-current"));
-      link.setAttribute("aria-current", "location");
+  const navSections = navLinks.map((link) => ({
+    link,
+    section: document.getElementById(link.hash.slice(1)),
+  })).filter(({ section }) => section);
+
+  let returningToTop = false;
+  let topScrollTimer;
+
+  const updateCurrentNav = () => {
+    if (returningToTop) return;
+    const headerBottom = document.querySelector(".header")?.getBoundingClientRect().bottom || 0;
+    const sectionLine = headerBottom + 13;
+    const current = navSections.find(({ section }) => {
+      const bounds = section.getBoundingClientRect();
+      return bounds.top <= sectionLine && bounds.bottom > sectionLine;
     });
+
+    navLinks.forEach((link) => {
+      if (link === current?.link) {
+        link.setAttribute("aria-current", "location");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  };
+
+  let navUpdatePending = false;
+  const scheduleNavUpdate = () => {
+    if (navUpdatePending) return;
+    navUpdatePending = true;
+    window.requestAnimationFrame(() => {
+      navUpdatePending = false;
+      updateCurrentNav();
+    });
+  };
+
+  const finishTopScroll = () => {
+    if (!returningToTop) return;
+    clearTimeout(topScrollTimer);
+    returningToTop = false;
+    scheduleNavUpdate();
+  };
+
+  document.querySelector(".page-top")?.addEventListener("click", () => {
+    returningToTop = true;
+    navLinks.forEach((link) => link.removeAttribute("aria-current"));
+    clearTimeout(topScrollTimer);
+    topScrollTimer = setTimeout(finishTopScroll, 180);
   });
+
+  window.addEventListener("scroll", () => {
+    if (returningToTop) {
+      clearTimeout(topScrollTimer);
+      topScrollTimer = setTimeout(finishTopScroll, 180);
+      return;
+    }
+    scheduleNavUpdate();
+  }, { passive: true });
+  window.addEventListener("scrollend", finishTopScroll);
+  window.addEventListener("resize", scheduleNavUpdate);
+  window.addEventListener("load", scheduleNavUpdate);
+  window.addEventListener("pageshow", scheduleNavUpdate);
+  updateCurrentNav();
 
   if (hamburger && nav) {
     let transitionTimer;
